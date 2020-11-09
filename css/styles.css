@@ -213,7 +213,7 @@ label #cancel{
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    box-shadow: 0 0 3px white;
+    box-shadow: 0 0 6px rgb(45,45,45);
     transition: all 0.5s;
     transform: translateY(15px);
 }
