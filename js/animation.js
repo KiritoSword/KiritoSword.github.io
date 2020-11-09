@@ -9,8 +9,8 @@ sr.reveal(".navbar", {
 });
 
 sr.reveal(".top-section", {
-    delay:300,
-    duration:2500
+    delay:850,
+    duration:1500
 });
 
 sr.reveal(".about-section h1", {
