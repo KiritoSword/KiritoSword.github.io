@@ -215,8 +215,9 @@ label #cancel{
     border-radius: 100%;
     box-shadow: 0 0 3px white;
     transition: all 0.5s;
+    transform: translateY(25px);
 }
 
-.contact-section ul li:hover {
-    transform: translateY(-5px);
+.contact-section ul li img:hover {
+    transform: translateY(0px) rotate(360deg);
 }
