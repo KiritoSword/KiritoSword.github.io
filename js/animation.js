@@ -10,9 +10,6 @@ sr.reveal(".navbar", {
 
 sr.reveal(".top-section", {
     delay:300,
-    opacity:1,
-    origin:"right",
-    distance:"100%",
     duration:2500
 });
 
@@ -28,8 +25,15 @@ sr.reveal(".about-section ul", {
     duration:1000
 });
 
-sr.reveal(".contact-section ul li", {
+sr.reveal(".contact-section ul", {
     delay:300,
-    scale:0,
-    duration:2000
+    opacity:0,
+    origin:"bottom",
+    distance:"50%",
+    duration:1000
+});
+
+sr.reveal(".contact-section h1", {
+    delay:300,
+    duration:1500
 });
