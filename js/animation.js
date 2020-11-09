@@ -28,7 +28,7 @@ sr.reveal(".about-section ul", {
     duration:1000
 });
 
-sr.reveal(".contact-section ul li a img", {
+sr.reveal(".contact-section ul li", {
     delay:300,
     scale:0,
     duration:2000
