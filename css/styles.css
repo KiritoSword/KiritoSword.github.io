@@ -37,6 +37,12 @@ html {
     height: 0;
 }
 
+.navbar img{
+    width: auto;
+    height: 30px;
+    vertical-align: middle;
+}
+
 .navbar ul{
     float: right;
     margin-right: 20px;
