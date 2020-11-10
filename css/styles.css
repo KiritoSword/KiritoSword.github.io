@@ -147,6 +147,17 @@ html {
     margin: 10px 15px;
 }
 
+.about-section ul li a {
+    color: white;
+    text-decoration: underline;
+}
+
+.about-section ul li img {
+    width: 125px;
+    max-width: 90%;
+    height: auto;
+}
+
 .contact-section {
     width: 100%;
     min-height: 30vh;
