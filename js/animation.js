@@ -46,10 +46,10 @@ sr.reveal(".contact-section h1", {
 
 sr.reveal(".member-section .logo", {
     delay:300,
-    duration:1500
+    duration:1000
 });
 
 sr.reveal(".member-section .tab-wrap", {
     delay:1000,
-    duration:1500
+    duration:1000
 });
