@@ -9,6 +9,19 @@
     <meta property="og:url" content="https://kiritosword.net">
     <meta name="copyright" content="©キリトソード">
     <link rel="stylesheet" href="../../css/styles.css">
+    <?php
+
+// echo で出力する方法
+echo '<meta charset="UTF-8">';
+
+// 文字列リテラルとして書く方法（このままでは出力されません）
+$title = 'php で HTML を書く方法';
+
+// 文字列操作でつなげることも出来ます
+echo "<title>{$title}</title>";
+
+// 一時的に php タグから脱出する方法
+?>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -74,6 +87,7 @@
                         addMetaTag("property","twitter:image:src","content","https://kiritosword.net/news/" + json.image);
                     });
         }
+
     </script>
 </head>
 <body>
@@ -93,6 +107,7 @@
     <div class="news-content" id="content">
         <div class="title" id="404">
             <h1>ページが見つかりませんでした</h1>
+            <h1>5秒後にニュースホームに戻ります</h1>
         </div>
         <div class="title" id="content-title">
             <!-- <h1>【ファクトチェック】ゲオルゲフロイドが死亡=>誤り</h1>
