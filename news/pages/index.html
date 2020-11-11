@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>キリトソード - 公式ウェブサイト</title>
     <link rel="shortcut icon" href="../../assets/icon.jpg">
     <meta property="og:site_name" content="kiritosword.net">
     <meta property="og:type" content="website">
@@ -15,6 +14,14 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>
+        function setTitle(title) {
+            var meta = document.getElementsByTagName("head")[0];
+            var obj_meta1 = document.createElement("title");
+            var text1 = document.createTextNode(title);
+            obj_meta1.appendChild(text1);
+            meta.appendChild(obj_meta1);
+        }
+
         function addMetaTag(key1, value1, key2, value2) {
             var meta = document.getElementsByTagName("head")[0];
             var obj_meta1 = document.createElement("meta");
@@ -55,6 +62,7 @@
                         var obj_404 = document.getElementById("404");
                         obj_404.remove();
 
+                        setTitle(json.title);
                         addMetaTag("property","og:name","content",json.title);
                         addMetaTag("property","twitter:title","content",json.title);
 
