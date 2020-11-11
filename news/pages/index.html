@@ -4,17 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>キリトソード - 公式ウェブサイト</title>
-    <meta name="description" content="英雄キリトソードの公式ウェブサイトです。">
     <link rel="shortcut icon" href="../../assets/icon.jpg">
-    <meta property="op:title" content="キリトソード - 公式ウェブサイト">
     <meta property="og:site_name" content="kiritosword.net">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kiritosword.net">
-    <meta property="og:image" content="https://kiritosword.net/assets/icon.jpg">
-    <meta property="twitter:title" content="キリトソード - 公式ウェブサイト">
-    <meta property="twitter:description" content="英雄キリトソードの公式ウェブサイトです。">
-    <meta property="twitter:image" content="https://kiritosword.net/assets/icon.jpg">
-    <meta property="twitter:image:src" content="https://kiritosword.net/assets/icon.jpg">
     <meta name="copyright" content="©キリトソード">
     <link rel="stylesheet" href="../../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
@@ -22,6 +15,14 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>
+        function addMetaTag(key1, value1, key2, value2) {
+            var meta = document.getElementsByTagName("head")[0];
+            var obj_meta1 = document.createElement("meta");
+            obj_meta1.setAttribute(key1, value1);
+            obj_meta1.setAttribute(key2, value2);
+            meta.appendChild(obj_meta1);
+        }
+
         var queryString = window.location.search;
         if (queryString) {
             var urlParams = new URLSearchParams(window.location.search);
@@ -53,7 +54,17 @@
 
                         var obj_404 = document.getElementById("404");
                         obj_404.remove();
-                });
+
+                        addMetaTag("property","og:name","content",json.title);
+                        addMetaTag("property","twitter:title","content",json.title);
+
+                        addMetaTag("name","description","content",json.desc);
+                        addMetaTag("property","twitter:description","content",json.desc);
+
+                        addMetaTag("property","og:image","content","https://kiritosword.net/news/" + json.image);
+                        addMetaTag("property","twitter:image","content","https://kiritosword.net/news/" + json.image);
+                        addMetaTag("property","twitter:image:src","content","https://kiritosword.net/news/" + json.image);
+                    });
         }
     </script>
 </head>
