@@ -66,6 +66,17 @@
                         obj_p.appendChild(text3);
                         content.appendChild(obj_p);
 
+                        var div = document.createElement("div");
+                        div.classList.add("desc");
+                        div.id = "desc";
+                        var obj_a2 = document.createElement("a");
+                        obj_a2.href = "../"
+                        var img = document.createElement("img");
+                        img.src = "../../assets/twitter.png"
+                        obj_a2.appendChild(img);
+                        div.appendChild(obj_a2);
+                        content.appendChild(div);
+
                         var obj_404 = document.getElementById("404");
                         obj_404.remove();
                     });

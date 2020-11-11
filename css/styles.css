@@ -432,3 +432,18 @@ html {
     margin:  0 auto;
     line-height: 32px;
 }
+
+.news-content .desc {
+    width: 900px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 50px 0px;
+    text-align: right;
+}
+
+.news-content .desc img {
+    width: 100px;
+    height: auto;
+    margin: 25px 25px;
+    border-radius: 100%;
+}
