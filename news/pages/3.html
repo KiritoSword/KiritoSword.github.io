@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/icon.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kiritosword.net">
+    <meta name="copyright" content="©キリトソード">
+    
+    <title>【速報】大物配信者の闇ケイタ氏が死去</title>
+    <meta property="og:title" content="【速報】大物配信者の闇ケイタ氏が死去">
+    <meta property="twitter:title" content="【速報】大物配信者の闇ケイタ氏が死去">
+    <meta property="og:image" content="https://kiritosword.net/news/img/yamikeita.jpg">
+    <meta property="twitter:image" content="https://kiritosword.net/news/img/yamikeita.jpg">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+        function setTitle(title) {
+            var meta = document.getElementsByTagName("head")[0];
+            var obj_meta1 = document.createElement("title");
+            var text1 = document.createTextNode(title);
+            obj_meta1.appendChild(text1);
+            meta.appendChild(obj_meta1);
+        }
+
+        function addMetaTag(key1, value1, key2, value2) {
+            var meta = document.getElementsByTagName("head")[0];
+            var obj_meta1 = document.createElement("meta");
+            obj_meta1.setAttribute(key1, value1);
+            obj_meta1.setAttribute(key2, value2);
+            meta.appendChild(obj_meta1);
+        }
+
+        var queryString = window.location.search;
+        if (queryString) {
+            var urlParams = new URLSearchParams(window.location.search);
+            var page = Number(urlParams.get("pages")) - 1;
+                $.getJSON("../news.json", function(data) {
+                        var json = data[page]
+                        var title = document.getElementById("content-title");
+
+                        var obj_h1 = document.createElement("h1");
+                        var text1 = document.createTextNode(json.title);
+                        obj_h1.appendChild(text1);
+                        title.appendChild(obj_h1);
+
+                        var obj_h2 = document.createElement("h2");
+                        var text2 = document.createTextNode(json.date);
+                        obj_h2.appendChild(text2);
+                        title.appendChild(obj_h2);
+
+                        var content = document.getElementById("content");
+
+                        var obj_img = document.createElement("img");
+                        obj_img.src = "../" + json.image;
+                        content.appendChild(obj_img);
+
+                        var obj_p = document.createElement("p");
+                        var text3 = document.createTextNode(json.desc);
+                        obj_p.appendChild(text3);
+                        content.appendChild(obj_p);
+
+                        var obj_404 = document.getElementById("404");
+                        obj_404.remove();
+                    });
+        }
+
+    </script>
+</head>
+<body>
+    <div class="sticky">
+        <nav class="navbar">
+            <div class="logo">
+                <!-- <a href="https://kiritosword.net/">kiritosword.net</a> -->
+                <a href="https://kiritosword.net/"><img src="../../assets/logo.png"></a>
+                <ul>
+                    <li>
+                        <a href="../">ニュースホーム</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="news-content" id="content">
+        <div class="title" id="404">
+            <h1>ページが見つかりませんでした</h1>
+        </div>
+        <div class="title" id="content-title">
+            <!-- <h1>【ファクトチェック】ゲオルゲフロイドが死亡=>誤り</h1>
+            <h2>2020.11.11</h2> -->
+        </div>
+        <!-- <img src="../img/george_fact.png">
+        <p>政府は、予算執行の無駄を外部有識者がチェックする「秋の行政事業レビュー」の公開点検作業で、航空自衛隊F2戦闘機の後継機の関連費用を検証する方針を固めた。政府関係者が3日、明らかにした。前防衛相の河野太郎行政改革担当相が高コストを問題視した。行革姿勢をアピールする狙いだが、削減が決まれば、開発プロセスに影響する可能性もある。
+
+            　点検対象とするのは、次期戦闘機の開発費と関連経費。政府関係者によると、配備予定の2035年度までの総額は少なくとも1兆2千億円に上ると試算される。
+            
+        </p> -->
+    </div>
+    <div class="contact-section" id="contact">
+        <p>このサイトの内容はフィクションです</p>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/channel/UCd_oSwbHEq67WS-zVphA7Uw" target=blank><img src="../../assets/youtube.png"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/Esports_HEROJP" target="blank"><img src="../../assets/twitter.png"></a>
+            </li>
+            <li>
+                <a href="https://discord.gg/mF4nEUK" target=blank><img src="../../assets/discord.jpg"></a>
+            </li>
+        </ul>
+        <h1>Copyright © キリトソード</h1>
+    </div>
+    <script src="../../js/animation.js"></script>
+</body>
+</html>
