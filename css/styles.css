@@ -109,9 +109,10 @@ html {
 .about-section {
     width: 100%;
     height: auto;
-    min-height: 100vh;
+    min-height: 75vh;
     text-align: center;
-    background: linear-gradient(rgb(50, 50, 50), rgb(25, 25, 25))
+    /* background: linear-gradient(rgb(50, 50, 50), rgb(25, 25, 25)) */
+    background: rgb(20,20,20);
 }
 
 .about-section img {
@@ -173,7 +174,8 @@ html {
     min-height: 30vh;
     height: auto;
     text-align: center;
-    background: linear-gradient(rgb(25, 25, 25), rgb(10, 10, 10));
+    /* background: linear-gradient(rgb(20, 20, 20), rgb(0, 0, 0)); */
+    background: rgb(30,30,30);
 }
 
 .contact-section h1 {
@@ -189,6 +191,7 @@ html {
 }
 
 .contact-section ul {
+    padding-top: 50px;
     vertical-align: middle;
     list-style-type: none;
     justify-content: center;
@@ -223,7 +226,8 @@ html {
     min-height: 100vh;
     color: white;
     text-align: center;
-    background: linear-gradient(rgb(75,75,75),rgb(25,25,25));
+    background: rgb(20, 20, 20);
+    /* background: linear-gradient(rgb(75,75,75),rgb(25,25,25)); */
     /* background: linear-gradient(rgb(25, 25, 25), rgb(40,40,40),rgb(25,25,25)); */
 }
 
@@ -265,6 +269,7 @@ html {
 }
 
 .tab-content ul {
+    padding: 100px 0px;
     list-style-type: none;
 }
 
@@ -451,13 +456,14 @@ html {
 
 .description-section {
     width: 100%;
-    min-height: 50vh;
+    min-height: 40vh;
     text-align: center;
-    background: linear-gradient(rgb(50,50,50),rgb(25,25,25));
+    /* background: linear-gradient(rgb(50,50,50),rgb(25,25,25)); */
+    background: rgb(20, 20, 20);
 }
 
 .description-section ul {
-    padding: 25px 0px;
+    padding: 100px 0px;
     display: inline-table;
     justify-content: center;
     list-style: none;
