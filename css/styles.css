@@ -61,14 +61,14 @@ html {
 .navbar ul li a{
     border-radius: 8px;
     text-decoration: none;
+    text-transform: uppercase;
     color: black;
-    padding: 6px 13px;
     font-size: 18px;
-    transition: 0.5s;
+    margin: 0px 10px;
 }
 
 .navbar ul li a:hover{
-    background:rgb(0, 0, 0, 0.1);
+    color: lightgray;
 }
 
 @media (max-width: 600px) {
