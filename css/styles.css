@@ -128,6 +128,7 @@ html {
 .about-section ul {
     list-style-type: none;
     justify-content: center;
+    padding: 75px 0px;
 }
 
 .about-section ul li {
