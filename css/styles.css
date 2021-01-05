@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: "Noto Serif JP", serif;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 
 .navbar{
     user-select: none;
-    height: 6vh;
+    height: 7vh;
     width: 100%;
     background: white;
 }
@@ -23,6 +23,7 @@ html {
 
 .navbar .logo img {
     margin: 0 30px;
+    vertical-align: middle;
 }
 
 .navbar .logo a {
@@ -55,15 +56,17 @@ html {
 .navbar ul li{
     display: inline-block;
     margin: 0 8px;
-    line-height: 6vh;
+    line-height: 7vh;
 }
 
 .navbar ul li a{
+    font-family: "Noto Serif JP", serif;
+    font-weight: bold;
+    font-size: 17px;
     border-radius: 8px;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-size: 18px;
     margin: 0px 10px;
 }
 
@@ -86,22 +89,12 @@ html {
 
 .top-section {
     text-align: center;
+    background: blue;
 }
 
 .top-section img {
     width: 100%;
-    height: auto;
-}
-
-.top-section h1{
-    color: white;
-    font-size: 64px;
-    padding-top: 250px;
-}
-
-.top-section img{
-    width: 100%;
-    margin: 0;
+    vertical-align: middle;
 }
 
 .about-section {
@@ -163,10 +156,14 @@ html {
     text-decoration: underline;
 }
 
+.about-section ul li .content {
+    min-height: 110px;
+}
+
 .about-section ul li img {
-    width: 125px;
+    height: 125px;
     max-width: 90%;
-    height: auto;
+    padding: 20px 0px;
 }
 
 .contact-section {
@@ -179,6 +176,7 @@ html {
 }
 
 .contact-section h1 {
+    font-family: "Kosugi Maru", serif;
     color: white;
     font-size: 24px;
     padding: 100px 0px;
@@ -487,4 +485,8 @@ html {
     font-size: 18px;
     line-height: 22px;
     white-space: pre-line;
+}
+
+.circle {
+    border-radius: 100%;
 }
