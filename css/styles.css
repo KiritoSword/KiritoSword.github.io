@@ -89,7 +89,7 @@ html {
 
 .top-section {
     text-align: center;
-    background: blue;
+    background: white;
 }
 
 .top-section img {
@@ -134,6 +134,19 @@ html {
     display: inline-table;
     transition: all 0.5s;
     margin: 25px 25px;
+}
+
+.blinking {
+    animation-name: blink;
+    animation-delay: 0.3s;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
 }
 
 .about-section ul li:hover {
