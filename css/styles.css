@@ -260,6 +260,7 @@ html {
 
 .tab-label {
     user-select: none;
+    cursor: pointer;
     color: White;
     font-size: 32px;
     font-weight: bold;
