@@ -259,6 +259,7 @@ html {
 }
 
 .tab-label {
+    user-select: none;
     color: White;
     font-size: 32px;
     font-weight: bold;
