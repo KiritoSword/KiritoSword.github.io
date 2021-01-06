@@ -294,9 +294,9 @@ html {
 .tab-content ul li {
     transform: scale(0.0) translateY(10px);
     display: inline-block;
-    width: 400px;
+    width: 350px;
     max-width: 80%;
-    max-height: 480px;
+    max-height: 430px;
     margin: 45px 45px;
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.75);
     background: rgba(255, 255, 255, 0.9);
@@ -304,6 +304,7 @@ html {
 
 .tab-content ul li p {
     color: rgba(0, 0, 0, 0.9);
+    font-size: 40px;
     font-weight: bold;
     text-decoration: none;
     line-height: 80px;
@@ -312,17 +313,13 @@ html {
 
 .tab-content ul li .contents {
     overflow: hidden;
-    max-height: 400px;
+    max-height: 350px;
 }
 
 .tab-content ul li img {
-    width: 100%;
-    height: auto;
+    width: 350px;
+    max-width: 100%;
     transition: all 0.2s linear;
-}
-
-.tab-content ul li:hover p {
-    transform: scale(1.1);
 }
 
 .tab-content ul li:hover img {
