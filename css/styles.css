@@ -277,6 +277,7 @@ html {
     height: 0;
     opacity: 0;
     font-size: 42px;
+    margin: 0 auto;
 }
 
 .tab-content h1 {
@@ -289,6 +290,7 @@ html {
 .tab-content ul {
     padding: 50px 0px;
     list-style-type: none;
+    margin: 0 auto;
 }
 
 .tab-content ul li {
@@ -317,6 +319,7 @@ html {
 }
 
 .tab-content ul li img {
+    display: block;
     width: 350px;
     max-width: 100%;
     transition: all 0.2s linear;
