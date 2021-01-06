@@ -100,7 +100,7 @@ html {
 .about-section {
     width: 100%;
     height: auto;
-    min-height: 94vh;
+    min-height: 100vh;
     text-align: center;
     /* background: linear-gradient(rgb(50, 50, 50), rgb(25, 25, 25)) */
     background: rgb(20,20,20);
@@ -113,14 +113,13 @@ html {
 .about-section h1 {
     color: white;
     font-size: 64px;
-    padding: 100px 0px;
-    margin: 0px;
+    padding-top: 100px;
 }
 
 .about-section ul {
     list-style-type: none;
     justify-content: center;
-    padding: 75px 0px;
+    margin-top: 5%;
 }
 
 .about-section ul li {
@@ -128,44 +127,48 @@ html {
     width: 350px;
     height: 350px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 6px white;
-    border-radius: 10px;
+    /* background: rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.5);
+    /* border-radius: 10px; */
     display: inline-table;
-    transition: all 0.5s;
+    transition: all 0.3s linear;
     margin: 25px 25px;
 }
 
-.blinking {
-    animation-name: blink;
-    animation-delay: 0.3s;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes blink {
-    0%, 100% {opacity: 1;}
-    50% {opacity: 0;}
-}
-
 .about-section ul li:hover {
-    transform: translateY(-10px);
+    box-shadow: none;
+}
+
+.about-section ul li:hover h1 {
+    box-shadow: none;
+    transform: translateY(-12px);
+}
+
+.about-section ul li:hover p {
+    transform: scale(1.02) translateY(-20px);
+}
+
+.about-section ul li:hover img {
+    transform: scale(1.02) translateY(-20px);
 }
 
 .about-section ul li h1 {
+    color: rgba(255, 255, 255, 0.92);
     font-size: 32px;
     padding: 25px 0px;
+    transition: all 0.3s linear;
 }
 
 .about-section ul li p {
+    color: rgba(255, 255, 255, 0.7);
     font-size: 18px;
     line-height: 25px;
     margin: 10px 15px;
+    transition: all 0.3s linear;
 }
 
 .about-section ul li a {
-    color: white;
+    color: rgba(255, 255, 255, 0.92);
     text-decoration: underline;
 }
 
@@ -177,6 +180,7 @@ html {
     height: 125px;
     max-width: 90%;
     padding: 20px 0px;
+    transition: all 0.3s linear;
 }
 
 .contact-section {

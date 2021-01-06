@@ -1,0 +1,12 @@
+.blinking {
+    animation-name: blink;
+    animation-delay: 0.3s;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
