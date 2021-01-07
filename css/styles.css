@@ -57,7 +57,6 @@ html {
 }
 
 .navbar ul li a{
-    font-family: "Noto Serif JP", serif;
     font-weight: bold;
     font-size: 16px;
     border-radius: 8px;
@@ -192,7 +191,6 @@ html {
 }
 
 .contact-section h1 {
-    font-family: "Kosugi Maru", serif;
     color: white;
     font-size: 24px;
     padding: 100px 0px;
