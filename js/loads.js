@@ -20,4 +20,4 @@ window.scrollTo(0, 0);
 lockScroll();
 setTimeout(function() {
     unlockScroll();
-}, 2000);
+}, 3000);
