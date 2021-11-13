@@ -2,9 +2,7 @@ window.sr = ScrollReveal()
 
 sr.reveal(".navbar", {
     delay:200,
-    opacity:1,
-    origin:"top",
-    distance:"100%",
+    opacity:0,
     duration:1000
 });
 
